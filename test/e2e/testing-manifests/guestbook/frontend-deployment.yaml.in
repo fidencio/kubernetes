@@ -14,6 +14,7 @@ spec:
         app: guestbook
         tier: frontend
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: guestbook-frontend
         image: {{.AgnhostImage}}

@@ -16,6 +16,7 @@ spec:
         role: master
         tier: backend
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: master
         image: {{.AgnhostImage}}

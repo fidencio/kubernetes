@@ -13,6 +13,7 @@ spec:
         app: csi-mockplugin
     spec:
       serviceAccountName: csi-mock
+      runtimeClassName: kata-qemu
       containers:
         - name: csi-provisioner
           image: quay.io/k8scsi/csi-provisioner:v1.5.0

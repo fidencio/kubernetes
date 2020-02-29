@@ -13,6 +13,7 @@ spec:
     spec:
       template:
         spec:
+          runtimeClassName: kata-qemu
           containers:
           - name: test
             image: busybox

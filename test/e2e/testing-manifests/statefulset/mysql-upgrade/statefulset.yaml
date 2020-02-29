@@ -54,6 +54,7 @@ spec:
           subPath: mysql
         - name: conf
           mountPath: /etc/mysql/conf.d
+      runtimeClassName: kata-qemu
       containers:
       - name: mysql
         image: mysql:5.7.15

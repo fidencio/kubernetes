@@ -42,6 +42,7 @@ spec:
           mountPath: "/work-dir"
         - name: config
           mountPath: "/etc/mysql"
+      runtimeClassName: kata-qemu
       containers:
       - name: mysql
         image: k8s.gcr.io/mysql-galera:e2e

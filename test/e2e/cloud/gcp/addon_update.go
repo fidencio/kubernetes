@@ -60,6 +60,7 @@ spec:
       labels:
         k8s-app: addon-reconcile-test
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - image: %s
         name: addon-reconcile-test
@@ -89,6 +90,7 @@ spec:
       labels:
         k8s-app: addon-reconcile-test
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - image: %s
         name: addon-reconcile-test
@@ -192,6 +194,7 @@ spec:
       labels:
         k8s-app: invalid-addon-test
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - image: %s
         name: invalid-addon-test

@@ -22,6 +22,7 @@
             }
          },
          "spec":{
+            "runtimeClassName":"kata-qemu",
             "containers":[
                {
                   "name":"agnhost-master",

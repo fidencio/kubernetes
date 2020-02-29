@@ -11,6 +11,7 @@ spec:
       labels:
         run: httpd-rc
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - image: {{.HttpdNewImage}}
         name: httpd-rc

@@ -50,6 +50,7 @@ spec:
                   values:
                   - cockroachdb
               topologyKey: kubernetes.io/hostname
+      runtimeClassName: kata-qemu
       containers:
       - name: cockroachdb
         image: cockroachdb/cockroach:v1.0

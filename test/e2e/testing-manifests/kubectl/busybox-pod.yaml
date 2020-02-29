@@ -5,6 +5,7 @@ metadata:
   labels:
     app: busybox1
 spec:
+  runtimeClassName: kata-qemu
   containers:
   - image: busybox
     command: ["/bin/sh", "-c", "mkdir -p /root/foo/bar && echo 'foobar' > /root/foo/bar/foo.bar && sleep 3600"]

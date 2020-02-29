@@ -16,6 +16,7 @@ spec:
       # this requirement when issue is resolved and before any exposure of
       # metrics ports.
       hostNetwork: true
+      runtimeClassName: kata-qemu
       containers:
         - name: csi-driver-registrar
           image: gcr.io/gke-release/csi-node-driver-registrar:v1.2.0-gke.0

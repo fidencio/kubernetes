@@ -28,6 +28,7 @@ spec:
         app: csi-snapshotter
     spec:
       serviceAccount: csi-snapshotter
+      runtimeClassName: kata-qemu
       containers:
       - name: csi-snapshotter
         image: quay.io/k8scsi/csi-snapshotter:v2.0.0
