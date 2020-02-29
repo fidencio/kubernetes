@@ -12,6 +12,7 @@ spec:
       labels:
         app: httpd
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: httpd
         image: {{.HttpdNewImage}}

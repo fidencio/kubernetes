@@ -28,6 +28,7 @@ spec:
         app: csi-snapshotter
     spec:
       serviceAccount: csi-snapshotter
+      runtimeClassName: kata-qemu
       containers:
       - name: csi-snapshotter
         # TODO: replace with official 2.0.0 release when ready

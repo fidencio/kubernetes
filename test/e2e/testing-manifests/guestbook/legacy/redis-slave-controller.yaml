@@ -15,6 +15,7 @@ spec:
         role: slave
         tier: backend
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: slave
         image: docker.io/library/redis:5.0.5-alpine

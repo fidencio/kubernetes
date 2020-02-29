@@ -5,6 +5,7 @@ metadata:
   labels:
     name: pause
 spec:
+  runtimeClassName: kata-qemu
   containers:
   - name: pause
     image: {{.PauseImage}}

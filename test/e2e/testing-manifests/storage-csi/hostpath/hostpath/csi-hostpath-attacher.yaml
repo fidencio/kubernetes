@@ -38,6 +38,7 @@ spec:
                 - csi-hostpathplugin
             topologyKey: kubernetes.io/hostname
       serviceAccountName: csi-attacher
+      runtimeClassName: kata-qemu
       containers:
         - name: csi-attacher
           image: quay.io/k8scsi/csi-attacher:v2.0.0

@@ -13,6 +13,7 @@ spec:
         app: csi-mockplugin-attacher
     spec:
       serviceAccountName: csi-mock
+      runtimeClassName: kata-qemu
       containers:
         - name: csi-attacher
           image: quay.io/k8scsi/csi-attacher:v1.1.0

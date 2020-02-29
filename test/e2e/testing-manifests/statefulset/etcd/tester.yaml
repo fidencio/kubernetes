@@ -12,6 +12,7 @@ spec:
       labels:
         app: test-server
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: test-server
         image: k8s.gcr.io/etcd-statefulset-e2e-test:0.0

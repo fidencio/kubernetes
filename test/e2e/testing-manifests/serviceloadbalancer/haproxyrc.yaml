@@ -16,6 +16,7 @@ spec:
         app: service-loadbalancer
         version: v1
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - image: k8s.gcr.io/servicelb:0.1
         imagePullPolicy: Always

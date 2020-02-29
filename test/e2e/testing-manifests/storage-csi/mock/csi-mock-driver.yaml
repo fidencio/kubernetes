@@ -13,6 +13,7 @@ spec:
         app: csi-mockplugin
     spec:
       serviceAccountName: csi-mock
+      runtimeClassName: kata-qemu
       containers:
         - name: csi-provisioner
           # TODO: replace with official 1.4.0 release when ready

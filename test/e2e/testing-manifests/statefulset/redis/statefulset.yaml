@@ -43,6 +43,7 @@ spec:
           mountPath: "/opt"
         - name: workdir
           mountPath: "/work-dir"
+      runtimeClassName: kata-qemu
       containers:
       - name: redis
         image: debian:jessie

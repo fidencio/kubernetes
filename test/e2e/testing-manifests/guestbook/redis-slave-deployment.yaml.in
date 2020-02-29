@@ -16,6 +16,7 @@ spec:
         role: slave
         tier: backend
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: slave
         image: {{.RedisImage}}

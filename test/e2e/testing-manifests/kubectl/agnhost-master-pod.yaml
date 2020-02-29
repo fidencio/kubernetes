@@ -6,6 +6,7 @@ metadata:
     role: master
   name: agnhost-master
 spec:
+  runtimeClassName: kata-qemu
   containers:
     - name: master
       image: gcr.io/kubernetes-e2e-test-images/agnhost:1.0

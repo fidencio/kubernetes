@@ -10,6 +10,7 @@ spec:
         app: guestbook
         tier: frontend
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: php-redis
         image: gcr.io/google_samples/gb-frontend:v4

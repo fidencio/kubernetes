@@ -9,6 +9,7 @@ spec:
       labels:
         app: nginx
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: nginxhttps
         image: bprashanth/nginxhttps:1.0

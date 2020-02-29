@@ -5,6 +5,7 @@ metadata:
   labels:
     name: httpd
 spec:
+  runtimeClassName: kata-qemu
   containers:
   - name: httpd
     image: {{.HttpdImage}}

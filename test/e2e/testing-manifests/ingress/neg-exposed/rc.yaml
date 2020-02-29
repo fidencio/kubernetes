@@ -13,6 +13,7 @@ spec:
       labels:
         run: hostname
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - image: gcr.io/kubernetes-e2e-test-images/serve-hostname:1.1
         name: host1

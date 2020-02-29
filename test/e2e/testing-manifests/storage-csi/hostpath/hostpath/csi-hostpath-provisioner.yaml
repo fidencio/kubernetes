@@ -38,6 +38,7 @@ spec:
                 - csi-hostpathplugin
             topologyKey: kubernetes.io/hostname
       serviceAccountName: csi-provisioner
+      runtimeClassName: kata-qemu
       containers:
         - name: csi-provisioner
           # TODO: replace with official 1.5.0 release when ready

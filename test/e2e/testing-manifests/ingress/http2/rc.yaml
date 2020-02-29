@@ -12,6 +12,7 @@ spec:
       labels:
         app: echoheaders
     spec:
+      runtimeClassName: kata-qemu
       containers:
       - name: echoheaders
         image: gcr.io/kubernetes-e2e-test-images/echoserver:2.2
